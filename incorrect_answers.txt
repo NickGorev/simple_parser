@@ -1,0 +1,15 @@
+Invalid variable name: 123
+Invalid variable name: 1
+Invalid variable name: 1alpha
+Unknown variable )
+Sintax error
+Unknown variable +
+Parentheses balance
+Sintax error
+Sintax error
+Sintax error
+division by zero
+Sintax error
+Sintax error
+Unknown variable *
+Sintax error
