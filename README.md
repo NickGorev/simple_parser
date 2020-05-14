@@ -3,15 +3,15 @@
 ## Грамматика
 алфавит:
 
-$\Sigma = \{\text{Строчние и заглавные латинские буквы}, \text{цифры от 0 до 9}, +, -, *, /, =, (, )\}$
+Σ = {Строчние и заглавные латинские буквы, цифры от 0 до 9, +, -, *, /, =, (, )}
 
 Правила вывода (нетерминалы выделены жирным):
 
 **S** → **Variable** = **Expr**<br>
 **Expr** → **Product** **Sum'**<br>
-**Sum'** → $\varepsilon$ | + **Product** **Sum'** | - **Product** **Sum'**<br>
+**Sum'** → ε | + **Product** **Sum'** | - **Product** **Sum'**<br>
 **Product** → **Term** **Product'**<br>
-**Product'** → $\varepsilon$ | * **Term** **Product'** | / **Term** **Product'**<br>
+**Product'** → ε | * **Term** **Product'** | / **Term** **Product'**<br>
 **Term** → -**Unsigned** | **Unsigned**<br>
 **Unsigned** → **Number** | (**Expr**) | **Variable**<br>
 **Number** → **N** | **ND**<br>
@@ -28,7 +28,7 @@ $\Sigma = \{\text{Строчние и заглавные латинские бу
 
 `test_parser.py` - тесты pytest
 
-Файлы `correct_tests.txt`
+Файлы `correct_tests.txt`, `incorrect_tests_txt`, `correct_answers.txt`, `incorrect_answers.txt` - необходимы для тестирования.
 
 ## Запуск парсера 
 ```
