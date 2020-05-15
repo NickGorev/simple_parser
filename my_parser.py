@@ -61,7 +61,7 @@ class Parser():
             term = self.parseProduct()
             return self.parseSumPrime(acc - term)
 
-        raise ParserError('Sintax error')
+        raise ParserError('Syntax error')
 
 
     def parseProduct(self):
@@ -82,15 +82,15 @@ class Parser():
             self.idx += 1
             divider = self.parseTerm()
             if divider == 0:
-                raise ParserError('division by zero')
+                raise ParserError('Division by zero')
             return self.parseProductPrime(acc // divider)
 
-        raise ParserError('Sintax error')
+        raise ParserError('Syntax error')
 
 
     def parseTerm(self):
         if self.idx == len(self.tokens):
-            raise ParserError('Sintax error')
+            raise ParserError('Syntax error')
 
         if self.tokens[self.idx] == '-':
             self.idx += 1
@@ -101,7 +101,7 @@ class Parser():
 
     def parseUnsigned(self):
         if self.idx == len(self.tokens):
-            raise ParserError('Sintax error')
+            raise ParserError('Syntax error')
 
         if self.tokens[self.idx].isdigit():
             val = int(self.tokens[self.idx])
@@ -140,7 +140,7 @@ class Parser():
         value = self.parseSum()
 
         if self.idx != len(self.tokens):
-            raise ParserError('Sintax error')
+            raise ParserError('Syntax error')
 
         self.variables[varName] = value
 

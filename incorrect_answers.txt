@@ -2,14 +2,14 @@ Invalid variable name: 123
 Invalid variable name: 1
 Invalid variable name: 1alpha
 Unknown variable )
-Sintax error
+Syntax error
 Unknown variable +
 Parentheses balance
-Sintax error
-Sintax error
-Sintax error
-division by zero
-Sintax error
-Sintax error
+Syntax error
+Syntax error
+Syntax error
+Division by zero
+Syntax error
+Syntax error
 Unknown variable *
-Sintax error
+Syntax error
